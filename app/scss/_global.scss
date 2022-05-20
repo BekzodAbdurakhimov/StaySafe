@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    @extend %redhat-regular;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 190%;
+    overflow-x: hidden;
+    color: #4B4F51;
+    background: linear-gradient(360deg, #FFFFFF -4.58%, #FFFFFF 102.22%);
+}
+
+.container {
+    max-width: 1442px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section__subtitle {
+    @extend %redhat-bold;
+    font-size: 32px;
+    line-height: 122%;
+    color: #FA5652;
+}
+
+.section__title {
+    @extend %redhat-bold;
+    font-size: 52px;
+    line-height: 139%;
+    color: #035755;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
